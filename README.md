@@ -39,12 +39,12 @@ This code is open-sourced under [The MIT License](http://www.opensource.org/lice
     
     **This will be cleaned up in a future revision.**
 		
-       @CucumberTest(resource = R.raw.addition)
-       public class AdditionFeature extends CucumberActivityInstrumentationTestCase2<CalculatorActivity> {
-           public AdditionFeature() {
-               super(MainActivity.class);
-           }
-       }
+        @CucumberTest(resource = R.raw.addition)
+        public class AdditionFeature extends CucumberActivityInstrumentationTestCase2<CalculatorActivity> {
+            public AdditionFeature() {
+                super(MainActivity.class);
+            }
+        }
 
 
 2. For consistency, step definitions should be defined in their own package such as `com.example.calculator.test.cucumber.steps` and must extend the TestCaseStepDefs class. 
